@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # RajCode Website
 
 Official personal website of Rajesh Patra, also known as RajCode. This project is a modern dark-themed personal website that showcases the developer's profile, work, projects, and contact details.
@@ -118,3 +119,7 @@ See the [LICENSE](LICENSE) file for the full legal text.
 ## Summary
 
 RajCode Website is a clean, modern, personal developer website built to introduce Rajesh Patra to the world, display his work, and create a strong online identity for his projects and collaborations.
+=======
+# rajcode-website
+Official website of Rajesh Patra (RajCode) — showcasing my projects, skills, and developer profile.
+>>>>>>> 0edd90e5ee84f958971769b45baafaec43e64506
