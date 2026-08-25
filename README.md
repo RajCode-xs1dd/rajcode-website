@@ -1,42 +1,47 @@
-<<<<<<< HEAD
 # RajCode Website
 
-Official personal website of Rajesh Patra, also known as RajCode. This project is a modern dark-themed personal website that showcases the developer's profile, work, projects, and contact details.
+<p align="center">
+  <img src="logo.png" alt="RajCode Logo" width="120" />
+</p>
 
-It is designed as a static site with a polished single-page experience, built using HTML, CSS, and JavaScript with Tailwind CSS for styling and Lucide icons for UI details.
+<p align="center">
+  <a href="https://rajcode.netlify.app/" target="_blank"><img src="https://img.shields.io/badge/Live%20Site-rajcode.netlify.app-0ea5e9?style=for-the-badge&logo=netlify" alt="Live site" /></a>
+  <a href="https://github.com/RajCode-xs1dd/rajcode-website" target="_blank"><img src="https://img.shields.io/badge/Repo-rajcode--website-181717?style=for-the-badge&logo=github" alt="GitHub repo" /></a>
+  <a href="https://github.com/RajCode-xs1dd" target="_blank"><img src="https://img.shields.io/badge/Profile-RajCode-xs1dd-ffffff?style=for-the-badge&logo=github" alt="GitHub profile" /></a>
+</p>
 
-## Live Demo
+Official personal website of Rajesh Patra (RajCode) — a modern developer website showcasing work, projects, skills, and contact details.
 
-- GitHub Pages: https://rajcode-xs1dd.github.io/
-- GitHub: https://github.com/RajCode-xs1dd
+## Live Website
 
-## Overview
+- Public site: https://rajcode.netlify.app/
+- GitHub repository: https://github.com/RajCode-xs1dd/rajcode-website
+- GitHub profile: https://github.com/RajCode-xs1dd
 
-This website presents RajCode as a developer-first brand and acts as a digital hub for:
+## About
 
-- personal introduction and bio
-- featured projects and app releases
-- live project filters and search
-- about section with skills and working philosophy
-- contact section with direct social links and email
-- contact form for project inquiries and collaboration
+This project is my personal website and digital identity. It allows visitors to:
 
-The website is built to feel premium and modern, with a dark UI, glassmorphism cards, gradient accents, and smooth interactive transitions.
+- know more about me
+- explore my projects and apps
+- view my developer skills and stack
+- get in touch for collaborations or freelance work
+- see live examples of my work
+
+The website is designed with a premium dark theme, responsive layout, project search/filtering, and a strong RajCode brand identity.
 
 ## Features
 
-- responsive single-page layout
-- sticky navigation and mobile drawer menu
-- home section with hero banner and call-to-action buttons
-- featured project cards for Android apps and web tools
-- searchable and filterable project list
-- about page with developer journey, stack, and values
-- contact section with direct links to GitHub, LinkedIn, X, Instagram, and Facebook
-- copy-to-clipboard email action
-- contact form using Web3Forms integration
-- SEO metadata for social previews and search visibility
-- favicon and social image support
-- modern styling with Tailwind CSS and custom animations
+- responsive single-page personal website
+- sticky navigation and mobile menu
+- hero section with strong personal branding
+- live project gallery with filters and search
+- about section with developer story and skills
+- contact section with email and social links
+- Web3Forms-powered contact form
+- SEO metadata for social sharing and search engines
+- favicon and social sharing image support
+- Netlify-ready static deployment
 
 ## Tech Stack
 
@@ -45,7 +50,7 @@ The website is built to feel premium and modern, with a dark UI, glassmorphism c
 - JavaScript
 - Tailwind CSS
 - Lucide Icons
-- Google Fonts (Inter + JetBrains Mono)
+- Google Fonts
 
 ## Project Structure
 
@@ -56,20 +61,17 @@ Rajcode Website/
 ├── robots.txt
 ├── sitemap.xml
 ├── README.md
+├── LICENSE
 └── assets/
 ```
 
-## How to Run Locally
-
-Because this is a static website, you can run it in two easy ways:
+## Run Locally
 
 ### Option 1: Open directly in browser
 
-Open `index.html` in any browser.
+Open `index.html` in your browser.
 
-### Option 2: Use a local web server
-
-From the project folder, run:
+### Option 2: Use a local server
 
 ```bash
 python -m http.server 8000
@@ -83,21 +85,17 @@ http://localhost:8000
 
 ## Deployment
 
-This project is designed for static hosting and can be deployed on:
+This project is designed for static hosting and works well on:
 
-- GitHub Pages
 - Netlify
+- GitHub Pages
 - Vercel
-- any static hosting provider
 
-For Netlify or Vercel, you can connect the GitHub repository and deploy the project as a static site without a build step.
+The live public site is currently hosted on Netlify:
 
-## Important Notes
-
-- The project uses a dark-mode visual identity for a modern developer brand.
-- The contact form is wired to a Web3Forms access key.
-- Social metadata and SEO tags are already included, including Open Graph and Twitter card data.
-- The project is structured as a personal brand website rather than a standard business landing page.
+```text
+https://rajcode.netlify.app/
+```
 
 ## Contact
 
@@ -112,14 +110,8 @@ For Netlify or Vercel, you can connect the GitHub repository and deploy the proj
 
 This project is licensed under the MIT License.
 
-The MIT License is a permissive open-source license that allows others to view, use, modify, and distribute the code, as long as the original copyright notice and license text are included in copies or substantial portions of the software.
-
-See the [LICENSE](LICENSE) file for the full legal text.
+See the [LICENSE](LICENSE) file for the full text.
 
 ## Summary
 
-RajCode Website is a clean, modern, personal developer website built to introduce Rajesh Patra to the world, display his work, and create a strong online identity for his projects and collaborations.
-=======
-# rajcode-website
-Official website of Rajesh Patra (RajCode) — showcasing my projects, skills, and developer profile.
->>>>>>> 0edd90e5ee84f958971769b45baafaec43e64506
+RajCode Website is the official online home for Rajesh Patra — a place to showcase work, connect with people, and share the projects and ideas behind the RajCode brand.
