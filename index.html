@@ -2,7 +2,7 @@
 <html lang="en" class="dark scroll-smooth overflow-x-hidden">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   
   <!-- ================= PRIMARY SEO META TAGS ================= -->
   <title>RajCode — Rajesh Patra | Developer, Android & Web Shipper</title>
@@ -106,6 +106,7 @@
     .bento-card {
       background: linear-gradient(180deg, rgba(15, 24, 46, 0.75) 0%, rgba(9, 15, 30, 0.85) 100%);
       border: 1px solid rgba(26, 39, 68, 0.85);
+      -webkit-backdrop-filter: blur(16px);
       backdrop-filter: blur(16px);
       transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1);
     }
@@ -181,8 +182,8 @@
   <canvas id="ambient-canvas" class="fixed inset-0 pointer-events-none z-0 opacity-20"></canvas>
 
   <!-- ================= TOP HEADER NAVIGATION ================= -->
-  <header class="sticky top-0 z-40 w-full backdrop-blur-2xl bg-brand-dark/85 border-b border-brand-border/80">
-    <div class="max-w-4xl w-full mx-auto px-4 sm:px-6 py-3.5 flex items-center justify-between gap-4">
+  <header class="fixed top-0 left-0 z-40 w-full backdrop-blur-2xl bg-brand-dark/90 border-b border-brand-border/80 shadow-lg shadow-black/10">
+    <div class="max-w-6xl w-full mx-auto px-4 sm:px-6 lg:px-8 py-3.5 md:py-4 flex items-center justify-between gap-4">
       
       <!-- Brand Logo -->
       <a href="javascript:void(0)" onclick="switchView('home')" class="flex items-center gap-3 group shrink-0">
@@ -200,11 +201,11 @@
 
       <!-- Desktop Nav & Quick Search -->
       <div class="flex items-center gap-2.5 shrink-0">
-        <nav class="hidden md:flex items-center gap-1 text-sm font-medium text-slate-300 bg-brand-surface/80 border border-brand-border p-1 rounded-xl shadow-inner">
-          <button onclick="switchView('home')" id="nav-home" class="px-3.5 py-1.5 rounded-lg text-white bg-blue-600/30 border border-blue-500/40 transition-all">Home</button>
-          <button onclick="switchView('projects')" id="nav-projects" class="px-3.5 py-1.5 rounded-lg hover:text-white hover:bg-slate-800 transition-all">Projects</button>
-          <button onclick="switchView('about')" id="nav-about" class="px-3.5 py-1.5 rounded-lg hover:text-white hover:bg-slate-800 transition-all">About</button>
-          <button onclick="switchView('contact')" id="nav-contact" class="px-3.5 py-1.5 rounded-lg hover:text-white hover:bg-slate-800 transition-all">Contact</button>
+        <nav class="hidden md:flex items-center gap-1.5 text-sm font-medium text-slate-300 bg-brand-surface/80 border border-brand-border p-1.5 rounded-2xl shadow-inner">
+          <button onclick="switchView('home')" id="nav-home" class="px-4 py-2 rounded-xl text-white bg-blue-600/30 border border-blue-500/40 transition-all">Home</button>
+          <button onclick="switchView('projects')" id="nav-projects" class="px-4 py-2 rounded-xl hover:text-white hover:bg-slate-800 transition-all">Projects</button>
+          <button onclick="switchView('about')" id="nav-about" class="px-4 py-2 rounded-xl hover:text-white hover:bg-slate-800 transition-all">About</button>
+          <button onclick="switchView('contact')" id="nav-contact" class="px-4 py-2 rounded-xl hover:text-white hover:bg-slate-800 transition-all">Contact</button>
         </nav>
 
         <button onclick="switchView('projects'); setTimeout(() => document.getElementById('project-search')?.focus(), 100);" title="Search Projects" class="hidden sm:flex items-center gap-1.5 px-3 py-2 rounded-xl border border-brand-border bg-brand-surface hover:border-slate-500 text-xs font-mono text-slate-400 transition-all">
@@ -236,7 +237,7 @@
               <span class="text-[10px] text-slate-400">Rajesh Patra</span>
             </div>
           </div>
-          <button onclick="toggleMenu()" class="p-2.5 rounded-xl border border-brand-border bg-brand-surface text-slate-300 hover:text-white">
+          <button onclick="toggleMenu()" title="Close navigation menu" aria-label="Close navigation menu" class="p-2.5 rounded-xl border border-brand-border bg-brand-surface text-slate-300 hover:text-white">
             <i data-lucide="x" class="w-5 h-5"></i>
           </button>
         </div>
@@ -268,7 +269,7 @@
   </div>
 
   <!-- ================= MAIN CONTENT CONTAINER ================= -->
-  <main class="relative z-10 flex-grow w-full max-w-4xl mx-auto px-4 sm:px-6 py-6 sm:py-8">
+  <main class="relative z-10 flex-grow w-full max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 pt-24 sm:pt-28 pb-6 sm:pb-8">
 
     <!-- ================= 1. HOME VIEW ================= -->
     <div id="view-home" class="view-transition show-view space-y-16">
@@ -338,7 +339,7 @@
           </button>
         </div>
 
-        <div class="space-y-4">
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
           <!-- Featured Card 1 -->
           <div class="bento-card p-6 sm:p-7 rounded-3xl space-y-4">
             <div class="flex items-center justify-between">
@@ -500,7 +501,7 @@
       </div>
 
       <!-- Projects Grid -->
-      <div id="projects-list" class="space-y-4">
+      <div id="projects-list" class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-5 items-stretch">
         <!-- JS Populated -->
       </div>
 
@@ -513,8 +514,8 @@
       </div>
 
       <!-- GitHub Banner -->
-      <div class="bento-card p-8 rounded-3xl text-center space-y-4">
-        <div class="flex justify-center text-blue-400"><i data-lucide="github" class="w-8 h-8"></i></div>
+      <div class="bento-card p-8 rounded-3xl text-center md:text-left space-y-4">
+        <div class="flex justify-center md:justify-start text-blue-400"><i data-lucide="github" class="w-8 h-8"></i></div>
         <h3 class="text-lg font-bold text-white">More projects & experiments live on GitHub</h3>
         <div>
           <a href="https://github.com/RajCode-xs1dd" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2 px-6 py-3 rounded-xl font-semibold text-white bg-gradient-to-r from-blue-600 to-indigo-600 hover:from-blue-500 hover:to-indigo-500 shadow-lg shadow-blue-500/25 transition-all text-sm">
@@ -586,7 +587,7 @@
           <h2 class="text-2xl font-bold text-white mt-1">What I work with</h2>
         </div>
 
-        <div class="space-y-4">
+        <div class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-4 items-stretch">
           <div class="bento-card p-5 sm:p-6 rounded-2xl space-y-3">
             <span class="text-xs font-bold tracking-wider text-blue-400 uppercase">Frontend</span>
             <div class="flex flex-wrap gap-2 font-mono">
@@ -632,7 +633,7 @@
           <h2 class="text-2xl font-bold text-white mt-1">Principles I ship by</h2>
         </div>
 
-        <div class="space-y-4">
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-4 items-stretch">
           <div class="bento-card p-6 rounded-2xl flex items-start gap-4">
             <div class="p-3 rounded-xl bg-blue-500/10 border border-blue-500/20 text-blue-400 mt-1">
               <i data-lucide="rocket" class="w-5 h-5"></i>
@@ -723,7 +724,7 @@
       <!-- Ways to reach me Grid -->
       <div class="space-y-4">
         <div class="text-xs font-bold tracking-widest text-slate-400 uppercase">Ways to reach me</div>
-        <div class="grid grid-cols-1 sm:grid-cols-2 gap-3.5">
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3.5">
           
           <!-- Email (One-Click Copy) -->
           <div class="bento-card p-4 rounded-2xl flex items-center justify-between group cursor-pointer" onclick="copyEmailToClipboard()">
@@ -1007,8 +1008,8 @@
         tags: ["HTML", "CSS", "JavaScript", "PHP"],
         actionText: "Open App",
         actionIcon: "external-link",
-        appLink: "https://rajcode2006.github.io/My_portfolio/",
-        sourceLink: "https://github.com/rajcode2006/My_portfolio"
+        appLink: "https://rajcode-portfolio.netlify.app/",
+        sourceLink: "https://github.com/RajCode-xs1dd/rajcode-portfolio"
       },
       {
         id: 6,
@@ -1154,7 +1155,7 @@
       } else {
         emptyState.classList.add('hidden');
         list.innerHTML = filtered.map((p, index) => `
-          <div class="bento-card project-anim p-6 sm:p-7 rounded-3xl space-y-4" style="animation-delay: ${index * 40}ms">
+          <div class="bento-card project-anim p-6 sm:p-7 rounded-3xl space-y-4 flex flex-col h-full" style="animation-delay: ${index * 40}ms">
             <div class="flex items-center justify-between">
               <span class="tech-pill px-2.5 py-1 rounded-md text-xs font-semibold font-mono">${p.badgeIcon} ${p.categoryLabel}</span>
               <span class="badge-glow-green inline-flex items-center gap-1.5 text-xs font-medium text-emerald-400 bg-emerald-500/10 px-2.5 py-0.5 rounded-full border border-emerald-500/30 font-mono">
@@ -1168,7 +1169,7 @@
             <div class="flex flex-wrap gap-2 pt-1 font-mono">
               ${p.tags.map(tag => `<span class="tech-pill px-3 py-1 rounded-lg text-xs font-medium">${tag}</span>`).join('')}
             </div>
-            <div class="flex items-center justify-between pt-2">
+            <div class="flex items-center justify-between pt-2 mt-auto">
               <a href="${p.appLink}" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-1.5 text-sm font-semibold text-blue-400 hover:text-blue-300">
                 ${p.actionText} <i data-lucide="${p.actionIcon}" class="w-4 h-4"></i>
               </a>
