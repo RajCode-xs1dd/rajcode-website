@@ -335,7 +335,7 @@
             <p class="text-slate-400 text-sm mt-1">Not demos. Actual apps and tools built and shipped from scratch.</p>
           </div>
           <button onclick="switchView('projects')" class="hidden sm:inline-flex items-center gap-1.5 text-xs font-bold text-blue-400 hover:text-blue-300 transition-colors">
-            All Projects (13) <i data-lucide="arrow-right" class="w-3.5 h-3.5"></i>
+            All Projects (14) <i data-lucide="arrow-right" class="w-3.5 h-3.5"></i>
           </button>
         </div>
 
@@ -378,21 +378,24 @@
               </span>
             </div>
             <div>
-              <h3 class="text-xl font-bold text-white">Image Compress Tool</h3>
+              <h3 class="text-xl font-bold text-white">PixelCraft – Browser-Based Image Suite</h3>
               <p class="text-slate-400 text-sm mt-2 leading-relaxed">
-                Resize, compress, crop, and filter images directly in your browser. Drag & drop, undo/redo, DPI control, and light/dark mode. 100% client-side — no uploads, fully private.
+                A lightning-fast, privacy-first web utility for compressing, resizing, cropping, and editing images directly in the browser tab using HTML5 Canvas and Web APIs. No cloud uploads, 100% secure.
               </p>
             </div>
             <div class="flex flex-wrap gap-2 pt-1 font-mono">
               <span class="tech-pill px-3 py-1 rounded-lg text-xs">HTML5</span>
-              <span class="tech-pill px-3 py-1 rounded-lg text-xs">JavaScript</span>
+              <span class="tech-pill px-3 py-1 rounded-lg text-xs"> Modern JavaScript</span>
+               <span class="tech-pill px-3 py-1 rounded-lg text-xs">CSS3</span>
               <span class="tech-pill px-3 py-1 rounded-lg text-xs">Cropper.js</span>
+               <span class="tech-pill px-3 py-1 rounded-lg text-xs">JSZip</span>
+                <span class="tech-pill px-3 py-1 rounded-lg text-xs">Bootstrap Icons</span>
             </div>
             <div class="pt-2 flex items-center gap-4">
-              <a href="https://rajcode-xs1dd.github.io/image-compress-tool/" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-1.5 text-sm font-semibold text-blue-400 hover:text-blue-300">
+              <a href="https://pixelcraft-rajcode.netlify.app/" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-1.5 text-sm font-semibold text-blue-400 hover:text-blue-300">
                 Try It Out <i data-lucide="zap" class="w-4 h-4"></i>
               </a>
-              <a href="https://github.com/RajCode-xs1dd/image-compress-tool" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-1.5 text-xs text-slate-400 hover:text-white">
+              <a href="https://github.com/RajCode-xs1dd/PixelCraft" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-1.5 text-xs text-slate-400 hover:text-white">
                 <i data-lucide="code" class="w-3.5 h-3.5"></i> View Source
               </a>
             </div>
@@ -401,7 +404,7 @@
 
         <div class="pt-2 flex justify-center">
           <button onclick="switchView('projects')" class="px-6 py-3.5 rounded-xl font-semibold border border-brand-border bg-brand-surface hover:bg-slate-800 text-white flex items-center gap-2 transition-colors text-sm shadow-md">
-            View all 13 projects <i data-lucide="arrow-right" class="w-4 h-4"></i>
+            View all 14 projects <i data-lucide="arrow-right" class="w-4 h-4"></i>
           </button>
         </div>
       </section>
@@ -462,7 +465,7 @@
         <button onclick="switchView('home')" class="inline-flex items-center gap-2 px-4 py-2 rounded-xl border border-brand-border bg-brand-surface text-xs font-medium text-slate-300 hover:text-white hover:border-slate-500 transition-colors">
           <i data-lucide="home" class="w-3.5 h-3.5"></i> Back to home
         </button>
-        <div class="text-xs font-mono text-slate-400">Total: <span id="total-count-badge" class="text-blue-400 font-bold">13</span></div>
+        <div class="text-xs font-mono text-slate-400">Total: <span id="total-count-badge" class="text-blue-400 font-bold">14</span></div>
       </div>
 
       <div class="space-y-2">
@@ -497,7 +500,7 @@
           <button onclick="filterProjects('game')" class="filter-btn px-4 py-1.5 rounded-xl text-xs font-semibold bg-brand-surface border border-brand-border text-slate-300 hover:text-white transition-all" data-filter="game">🎮 Games</button>
           <button onclick="filterProjects('experiment')" class="filter-btn px-4 py-1.5 rounded-xl text-xs font-semibold bg-brand-surface border border-brand-border text-slate-300 hover:text-white transition-all" data-filter="experiment">🧪 Experiments</button>
         </div>
-        <div id="project-count" class="text-xs text-slate-400 font-mono">13 projects</div>
+        <div id="project-count" class="text-xs text-slate-400 font-mono">14 projects</div>
       </div>
 
       <!-- Projects Grid -->
@@ -939,7 +942,7 @@
   <script>
     lucide.createIcons();
 
-    // 13 Full Projects Catalog
+    // 14 Full Projects Catalog
     const projectsData = [
       {
         id: 1,
@@ -957,17 +960,17 @@
       },
       {
         id: 2,
-        title: "Image Compress Tool",
+        title: "PixelCraft – Browser-Based Image Suite",
         category: "tool",
         categoryLabel: "Tools",
         badgeIcon: "⚡",
         badgeClass: "bg-indigo-950/80 text-indigo-300 border-indigo-800/60",
-        desc: "A fast, privacy-friendly web app to resize, compress, crop, and filter images directly in your browser. Supports drag & drop, undo/redo, DPI control, recent history, and light/dark mode. 100% client-side — no uploads.",
-        tags: ["HTML5", "CSS3", "JavaScript", "Cropper.js", "Bootstrap 5"],
+        desc: "A comprehensive, studio-grade image processing platform built with a 100% client-side architecture. Features bulk compression, precise cropping, format conversion (JPG, PNG, WEBP), and a full-featured photo editor with zero server uploads and complete user data privacy.",
+        tags: ["HTML5", "CSS3", "JavaScript", "Cropper.js", "Bootstrap Icons", "JSZip"],
         actionText: "Try It Out",
         actionIcon: "zap",
-        appLink: "https://rajcode-xs1dd.github.io/image-compress-tool/",
-        sourceLink: "https://github.com/RajCode-xs1dd/image-compress-tool"
+        appLink: "https://pixelcraft-rajcode.netlify.app/",
+        sourceLink: "https://github.com/RajCode-xs1dd/PixelCraft"
       },
       {
         id: 3,
@@ -1069,6 +1072,20 @@
       },
       {
         id: 10,
+        title: "MindFlip - Visual Memory Puzzle Game",
+        category: "game",
+        categoryLabel: "Games",
+        badgeIcon: "🎮",
+        badgeClass: "bg-emerald-950/80 text-emerald-300 border-emerald-800/60",
+        desc: "A responsive browser-based memory challenge built with vanilla JavaScript and Tailwind CSS. Features Solo, Two-Player, AI opponent, and progressive Daily modes optimized for mobile and desktop.",
+        tags: ["JavaScript (ES6+), Tailwind CSS, HTML5, Web Audio API, LocalStorage"],
+        actionText: "Play Now",
+        actionIcon: "gamepad-2",
+        appLink: "https://mindflip-game.netlify.app/",
+        sourceLink: "https://github.com/RajCode-xs1dd/MindFlip"
+      },
+      {
+        id: 11,
         title: "NeuroZip Game",
         category: "game",
         categoryLabel: "Games",
@@ -1082,7 +1099,7 @@
         sourceLink: "https://github.com/RajCode-xs1dd/neurozip-game"
       },
       {
-        id: 11,
+        id: 12,
         title: "HBD1 — Birthday Surprise",
         category: "experiment",
         categoryLabel: "Experiments",
@@ -1096,7 +1113,7 @@
         sourceLink: "https://github.com/RajCode-xs1dd/HBD1"
       },
       {
-        id: 12,
+        id: 13,
         title: "NEXUS 2K26 — Welcome Pass",
         category: "app",
         categoryLabel: "Apps",
@@ -1110,7 +1127,7 @@
         sourceLink: "https://github.com/RajCode-xs1dd"
       },
       {
-        id: 13,
+        id: 14,
         title: "NEXUS 2K26 — Media Vault",
         category: "app",
         categoryLabel: "Apps",
